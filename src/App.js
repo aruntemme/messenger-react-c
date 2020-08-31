@@ -5,6 +5,10 @@ import "./App.css";
 function App() {
   //              REACT HOOKS HERE
   const [input, setInput] = useState("");
+  const [messages, setMessages] = useState(["a", "b", "c"]);
+  const sendMessage = (event) => {
+    setMessages([...messages]);
+  };
 
   //              RETURN
   return (
